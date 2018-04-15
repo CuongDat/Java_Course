@@ -1,32 +1,19 @@
 package cuongdat0508hue.gmail.com;
 
-import java.util.Scanner;
-
 public class DaoTu {
 
-	public static void main(String[] args) {
-		String s = new String();
-		System.out.println("Nhập vào 1 chuỗi: ");
-		s = new Scanner(System.in).nextLine();	
-		String s1 = ""; 
-		String s2 = ""; 
-		for(int i = s.length()-1; i >= 0; i--) 
-		{
-			if(s.charAt(i) != ' ') 
+	public static String thuchien(String s) {
+		String ns = new String();
+		char[] s1  = s.toCharArray();
+		int count = 0;
+		for (int i = 0; i < s1.length; i++)
+			if (s1[i] == ' '|| i == 0)
 			{
-				s1 = s.charAt(i) +s1;
+				count++;
 			}
-			else
-			{
-				s2 += s1 + ' ';
-				s1 = "";
-			}
-			if(i == 0)
-			{
-				s2 += s1;
-			}
-		}
-		System.out.println(s2);
+			System.out.println(count);
+			return ns;
+		
 	}
 
 }

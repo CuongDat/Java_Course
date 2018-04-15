@@ -1,17 +1,17 @@
 package cuongdat0508hue.gmail.com;
 
-import java.util.Scanner;
-
 public class DaoXau {
-
-	public static void main(String[] args) {
-		String string;
-		Scanner sc = new Scanner(System.in);
-		System.out.println("Nhập xâu cần đảo");
-		string = sc.nextLine();
-		String reverse = new StringBuffer(string).reverse().toString();
-		System.out.println("Xâu trước khi đảo: "+string);
-		System.out.println("Xâu sau khi đảo: "+reverse);
+	public static String thuchien(String s) {
+		String ns = new String();
+		char[]s1 = s.toCharArray();
+		for (int i = s1.length-1; i>=0; i--)
+			{
+				ns+= s1[i];
+			}
+		return ns;
+		
 	}
+
+	
 
 }
