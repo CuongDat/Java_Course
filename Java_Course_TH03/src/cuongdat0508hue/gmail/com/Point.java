@@ -1,4 +1,4 @@
-package dnhthanh.hueic.edu.vn;
+package cuongdat0508hue.gmail.com;
 
 public class Point {
 	private float x;// Tọa độ x
