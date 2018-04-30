@@ -5,8 +5,8 @@ public class Point {
 	private float y;//Tọa độ y
 	
 	public Point() {
-		this.setX(Math.round(Math.random()*50));
-		this.setY(Math.round(Math.random()*50));
+		this.setX(Math.round(Math.random() * 50));
+		this.setY(Math.round(Math.random()  *50));
 	}
 
 	public float getX() {
@@ -25,6 +25,6 @@ public class Point {
 		this.y = y;
 	}
 	
-	//Tạo getters và setters cho x và y
+	
 	
 }
