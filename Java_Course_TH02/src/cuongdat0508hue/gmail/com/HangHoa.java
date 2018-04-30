@@ -2,7 +2,7 @@ package cuongdat0508hue.gmail.com;
 
 public class HangHoa {
 	private String tenhang;
-	//Tiếp tục cho các thuộc tính còn lại
+	
 
 	private String ngaysanxuat;
 	private double dongia;
@@ -15,7 +15,7 @@ public class HangHoa {
 	public void setTenHang(String th) {
 		tenhang = th;
 	}
-	//Tiếp tục cho các phương thức còn lại
+	
 
 	public String getNgaySanXuat() {
 		return ngaysanxuat;
@@ -55,7 +55,7 @@ public class HangHoa {
 	public HangHoa() {
 	}
 
-	@Override
+	
 	public String toString() {
 		return "Tên hàng: " + tenhang + "\n" + "Ngày sản xuất: " + ngaysanxuat + "\n" +
 				"Đơn giá: " + dongia + "\n" + "Số lượng: " + soluong + "\n" + "Thành tiền: " + TinhTien();
