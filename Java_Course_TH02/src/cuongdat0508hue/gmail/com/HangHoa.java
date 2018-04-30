@@ -8,55 +8,66 @@ public class HangHoa {
 	private double dongia;
 	private int soluong;
 
-	public String getTenHang() {
+	public String getTenHang() 
+	{
 		return tenhang;
 	}
 
-	public void setTenHang(String th) {
+	public void setTenHang(String th) 
+	{
 		tenhang = th;
 	}
 	
 
-	public String getNgaySanXuat() {
+	public String getNgaySanXuat() 
+	{
 		return ngaysanxuat;
 	}
 
-	public void setNgaySanXuat(String nsx) {
+	public void setNgaySanXuat(String nsx) 
+	{
 		ngaysanxuat = nsx;
 	}
 
-	public double getDonGia() {
+	public double getDonGia() 
+	{
 		return dongia;
 	}
 
-	public void setDonGia(double dg) {
+	public void setDonGia(double dg) 
+	{
 		dongia = dg;
 	}
 
-	public int getSoLuong() {
+	public int getSoLuong() 
+	{
 		return soluong;
 	}
 
-	public void setSoLuong(int sl) {
+	public void setSoLuong(int sl) 
+	{
 		soluong = sl;
 	}
 
-	public double TinhTien(){
+	public double TinhTien()
+	{
 		return dongia * soluong;
 	}
 
-	public HangHoa(String th, String nsx, double dg, int sl) {
+	public HangHoa(String th, String nsx, double dg, int sl) 
+	{
 		tenhang = th;
 		ngaysanxuat = nsx;
 		dongia = dg;
 		soluong = sl;
 	}
-
-	public HangHoa() {
+	public HangHoa() 
+	{
 	}
 
 	
-	public String toString() {
+	public String toString() 
+	{
 		return "Tên hàng: " + tenhang + "\n" + "Ngày sản xuất: " + ngaysanxuat + "\n" +
 				"Đơn giá: " + dongia + "\n" + "Số lượng: " + soluong + "\n" + "Thành tiền: " + TinhTien();
 	}
