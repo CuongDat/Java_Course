@@ -9,8 +9,8 @@ public class Round {
 		this.setO(new Point());
 	}
 
-	// Xét vị trí tương đối điểm với đường tròn: nếu nằm trong - trả về -1; nếu nằm
-	// ngoài - trả về 1; nếu nằm trên - trả về 0
+	
+	//Tạo getters và setters cho R và O
 	public int ViTriTuongDoiDiemVoiDuongTron(Point A) {
 
 		return 0;
@@ -30,5 +30,17 @@ public class Round {
 
 	public void setO(Point o) {
 		O = o;
+	}
+	// Xét vị trí tương đối điểm với đường tròn: nếu nằm trong - trả về -1; nếu nằm ngoài - trả về 1; nếu nằm trên - trả về 0
+	public int ViTriTuongDoiDiemVoiDuongTron(Point A){
+		float result = (float) Math.sqrt(Math.pow(A.getX()-O.getX(),2)+Math.pow(A.getY()-O.getY(),2));
+		if (KQ == R) {
+			return 0;
+		} else if (KQ < R) {
+			return -1;
+		} else if (KQ > R) {
+			return 1;
+		}
+		return 0;
 	}
 }
